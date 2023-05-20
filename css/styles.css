@@ -656,6 +656,7 @@ img {
 .form-input {
   width: 360px;
   height: 40px;
+  padding-left: 35px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -689,12 +690,10 @@ img {
   color: rgba(46, 47, 66, 0.4);
 }
 .accept-terms {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  width: 100%;
   margin-top: 16px;
-  gap: 8px;
-}
-.accept-terms-label {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -703,8 +702,25 @@ img {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+.checkbox {
+  /* -webkit-appearance: none;
+  -moz-appearance: none; */
+  appearance: none;
+}
 .accept-terms-link {
   color: var(--accent-color);
+}
+.accept-icon {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  fill: #fff;
+  margin-right: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox:checked + .accept-icon {
+  fill: var(--accent-color);
+  border: var(--accent-color);
 }
 .submit-button {
   width: 169px;

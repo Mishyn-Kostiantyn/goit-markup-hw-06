@@ -484,13 +484,15 @@
               class="form-textarea"
             ></textarea>
           </div>
-          <div class="accept-terms">
-            <input type="checkbox" name="accept" id="accept" />
-            <label for="accept" class="accept-terms-label"
-              >I accept the terms and conditions of the
+          <label class="accept-terms">
+            <input type="checkbox" class="checkbox" name="accept" id="accept" />
+            <svg class="accept-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-click"></use>
+            </svg>
+            I accept the terms and conditions of the
               <a class="accept-terms-link" href=""> Privacy Policy</a></label
             >
-          </div>
+          </label>
           <button type="submit" class="submit-button">Send</button>
         </form>
       </div>
