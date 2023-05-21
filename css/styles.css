@@ -519,7 +519,7 @@ img {
   max-height: 40px;
   padding: 8px 24px;
   background-color: var(--accent-color);
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -540,14 +540,7 @@ img {
 .subscribe-icon {
   margin-left: 16px;
 }
-/* .subscribe-button::after {
-  content: "";
-  margin-left: 16px;
-  background-image: url(../images/subscribe/send-icon.png);
-  width: 24px;
-  height: 24px;
-  background-size: contain;
-} */
+
 /* Backdrop */
 .backdrop {
   position: fixed;
@@ -706,8 +699,6 @@ img {
 .form-textarea:focus {
   border-color: #4d5ae5;
 }
-.form-textarea::placeholder {
-}
 .user-privacy-checkbox {
   margin-bottom: 24px;
 }
@@ -722,8 +713,6 @@ img {
   color: var(--label-text-color);
 }
 .checkbox {
-  /* -webkit-appearance: none;
-  -moz-appearance: none; */
   appearance: none;
 }
 .accept-terms-link {
@@ -739,9 +728,8 @@ img {
   border: 1px solid #2e2f42;
   border-radius: 2px;
 }
-.accept-icon {
-}
-.checkbox:checked .accept-icon-box {
+
+.checkbox:checked + .accept-terms .accept-icon-box {
   background-color: var(--background--border-color-checkbox-active-icon);
   border: none;
   fill: var(--fill-checkbox-active-icon);
@@ -755,7 +743,7 @@ img {
   background-color: var(--accent-color);
   border-radius: 4px;
   border: none;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
