@@ -324,15 +324,21 @@
         </div>
         <div class="subscribe">
           <p class="subscribe-title">Subscribe</p>
-          <div class="subscribe-form">
-            <input type="email" name="email" placeholder="E-mail" />
-            <button type="button" class="subscribe-button">
+          <form class="subscribe-form">
+            <label class="subscribe-label" for=""
+              ><input
+                class="subscribe-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+            /></label>
+            <button type="submit" class="subscribe-button">
               Subscribe
-              <svg class="icon" width="24" height="24">
+              <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send-icon"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
