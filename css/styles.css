@@ -500,7 +500,7 @@ img {
   font-family: Roboto;
   font-weight: 400;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
 }
 .subscribe input::placeholder {
@@ -519,7 +519,7 @@ img {
   max-height: 40px;
   padding: 8px 24px;
   background-color: var(--accent-color);
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -527,8 +527,9 @@ img {
   color: #ffffff;
   border-radius: 4px;
   border: none;
-  align-content: center;
+  align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .subscribe-button:hover {
   background-color: #404bbf;
@@ -632,7 +633,6 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 4px;
   margin-bottom: 8px;
   width: 100%;
 }
@@ -640,7 +640,6 @@ img {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 4px;
   margin-bottom: 16px;
 }
 .input-deco {
@@ -661,16 +660,18 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  margin-bottom: 4px;
   color: var(--label-text-color);
 }
 .form-input {
   width: 100%;
   height: 40px;
   padding-left: 38px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
+  background-color: transparent;
 }
 .form-input:hover,
 .form-input:focus {
@@ -740,7 +741,7 @@ img {
 }
 .accept-icon {
 }
-.checkbox:checked + .accept-icon-box {
+.checkbox:checked .accept-icon-box {
   background-color: var(--background--border-color-checkbox-active-icon);
   border: none;
   fill: var(--fill-checkbox-active-icon);
@@ -754,22 +755,20 @@ img {
   background-color: var(--accent-color);
   border-radius: 4px;
   border: none;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .submit-button:hover,
 .submit-button:focus {
   background-color: #404bbf;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* Portfolio */
 /* Filter */
